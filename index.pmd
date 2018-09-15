@@ -74,3 +74,27 @@ This can be evaluated as:
 
 Intuitively, this is also 1 minus our result from part A, as the joint probability of these two events must be 1.
 
+Problem 2
+=========
+
+The Art Competition has entries from three painters: Pam, Pia and Pablo. We have the following 
+information:
+
+- Pam put in 15 paintings, 4% of her works have won First Prize. 
+- Pia put in 5 paintings, 6% of her works have won First Prize. 
+- Pablo put in 10 paintings, 3% of his works have won First Prize. 
+
+Part A
+------
+
+What is the chance that Pam will win First Prize?
+
+Part B
+------
+
+What is the chance that Pia will win First Prize?
+
+Part C
+------
+
+What is the chance that Pablo will win First Prize?
