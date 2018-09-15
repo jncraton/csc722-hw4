@@ -80,21 +80,48 @@ Problem 2
 The Art Competition has entries from three painters: Pam, Pia and Pablo. We have the following 
 information:
 
-- Pam put in 15 paintings, 4% of her works have won First Prize. 
-- Pia put in 5 paintings, 6% of her works have won First Prize. 
-- Pablo put in 10 paintings, 3% of his works have won First Prize. 
+- Pam (A) put in 15 paintings, 4% of her works have won First Prize. 
+- Pia (B) put in 5 paintings, 6% of her works have won First Prize. 
+- Pablo (C) put in 10 paintings, 3% of his works have won First Prize. 
 
 Part A
 ------
 
-What is the chance that Pam will win First Prize?
+> What is the chance that Pam will win First Prize?
+
+This is another application of Bayes Theorom, except that we now have more cases, all of which must be considered in the denominator. We can set this up as:
+
+    P(A)·P(F|A) / ( P(A)·P(F|A) + P(B)·P(F|B) + P(C)·P(F|C) )
+
+And then evaluate:
+
+```python
+(15/30)*.04 / ( (15/30)*.04 + (5/30)*.06 + (10/30)*.03 )
+```
 
 Part B
 ------
 
-What is the chance that Pia will win First Prize?
+> What is the chance that Pia will win First Prize?
+
+    P(B)·P(F|B) / ( P(A)·P(F|A) + P(B)·P(F|B) + P(C)·P(F|C) )
+
+And then evaluate:
+
+```python
+(5/30)*.06 / ( (15/30)*.04 + (5/30)*.06 + (10/30)*.03 )
+```
 
 Part C
 ------
 
-What is the chance that Pablo will win First Prize?
+> What is the chance that Pablo will win First Prize?
+
+    P(A)·P(F|A) / ( P(A)·P(F|A) + P(B)·P(F|B) + P(C)·P(F|C) )
+
+And then evaluate:
+
+```python
+(10/30)*.03 / ( (15/30)*.04 + (5/30)*.06 + (10/30)*.03 )
+```
+
