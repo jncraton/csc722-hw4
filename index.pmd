@@ -142,7 +142,7 @@ In each image, there is a plant and the background. i.e. two classes. Plant biol
 > 1. Which of the information (R or B or G) is better to use for naïve bays classification if we only have to use one of them? i.e. which one classifies better plant vs non-plant. Explain 
 why.
 
-If we could only use 1 color channel for classification, it would be best to use green. We can see from the probability distribution function that the green channel has the least intersecting area between plant and non-plant.
+If we could only use 1 color channel for classification, it would be best to use green. We can see from the probability distribution function that the green channel has the least intersection between plant and non-plant.
 
 > 2. Which one (R or B or G) is the worst one? Explain why.
 
