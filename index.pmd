@@ -1,3 +1,21 @@
-% Title
-% Author
-% August 5th, 2018
+% CSC722 Homework 4
+% Jon Craton
+% September 21, 2018
+
+Problem 1
+=========
+
+Marie is getting married tomorrow, at an outdoor ceremony in the desert. In recent years, it has rained only 5 days each year. Unfortunately, the weatherman has predicted rain for tomorrow. When it actually rains, the weatherman correctly forecasts rain 90% of the time. When it doesn't 
+rain, he incorrectly forecasts rain 10% of the time. One year is 365 days.
+
+Part A
+------
+
+> What’s the probability of it actually rain on the wedding if the weatherman predicts the 
+rain? 
+
+Part B
+------
+
+> What’s the probability of it does not rain on the wedding if the weatherman predicts the 
+rain? 
