@@ -125,3 +125,26 @@ And then evaluate:
 (10/30)*.03 / ( (15/30)*.04 + (5/30)*.06 + (10/30)*.03 )
 ```
 
+Problem 3
+=========
+
+Let’s assume we are going to create a naïve Bayes model to classify each pixel in an image intotwo categories.  
+
+1. Plant  
+2. non-plant(Background) 
+
+This task is called pixel-level plant segmentation. 
+
+In each image, there is a plant and the background. i.e. two classes. Plant biologists are onlyinterested to the plant area in an image. We are going to segment a plant image and find whether every single pixel in an image belongs to the background or to the plant. An important task for plant biologists to focus on the plant area in an image and eliminate the background. Every pixel in an image has three information, red, green and blue (RGB). R, G and B together compose the color of each pixel in an image. We have probability distribution functions (PDFs) for R, G, and Blue channels for plant and background pixels in images as follow:
+
+![](media/prob3.png)
+
+> 1. Which of the information (R or B or G) is better to use for naïve bays classification if we 
+only have to use one of them? i.e. which one classifies better plant vs non-plant. Explain 
+why.
+
+> 2. Which one (R or B or G) is the worst one? Explain why.
+
+> 3. I have an unclassified pixel (we don’t know if it belongs to plant or the background). But I know its RGB information. R = 5, G = 8 and B = 9. Does this pixel belong to plant or non-plant? Write the Bayes equation for this question.
+
+> 4.What about a pixel with R = 30, G = 15, and B = 24? Write the Bayes rule and explant your solution.  
