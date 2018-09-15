@@ -14,6 +14,48 @@ Part A
 > What’s the probability of it actually rain on the wedding if the weatherman predicts the 
 rain? 
 
+    F = rain in forecast
+    R = rain
+
+> In recent years, it has rained only 5 days each year. (...) One year is 365 days.
+
+    P(R) = 5/365
+    P(¬R) = 1 - 5/365
+
+> When it actually rains, the weatherman correctly forecasts rain 90% of the time.
+
+    P(F|R) = .90
+
+> When it doesn't rain, he incorrectly forecasts rain 10% of the time.
+
+    P(F|¬R) = .10
+
+We can represent the probability of it raining given rain in the forecast as:
+
+    P(R|F)
+
+Recall Bayes Theorem:
+
+    P(A|B) = P(B|A)·P(A)/P(B) 
+
+So we can say that:
+
+    P(R|F) = P(F|R)·P(R)/P(F)
+
+We can represent the marginal probability of rain in the forcast as:
+
+    P(F) = P(F|R)·P(R) + P(F|¬R)·P(¬R)
+
+So the complete repesentation of our probability is:
+
+    P(R|F) = P(F|R)·P(R) / ( P(F|R)·P(R) + P(F|¬R)·P(¬R) )
+
+Now we simply plug in our values:
+
+```python
+.90 * (5/365) / (.90 * (5/365) + .10 * (360/365))
+```
+
 Part B
 ------
 
