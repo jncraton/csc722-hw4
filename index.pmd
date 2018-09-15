@@ -61,3 +61,16 @@ Part B
 
 > What’s the probability of it does not rain on the wedding if the weatherman predicts the 
 rain? 
+
+The Bayes rule application if very similar to part A:
+
+    P(¬R|F) = P(F|¬R)·P(¬R) / ( P(F|R)·P(R) + P(F|¬R)·P(¬R) )
+
+This can be evaluated as:
+
+```python
+.10 * (360/365) / (.90 * (5/365) + .10 * (360/365))
+```
+
+Intuitively, this is also 1 minus our result from part A, as the joint probability of these two events must be 1.
+
