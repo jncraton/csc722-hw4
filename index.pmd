@@ -163,13 +163,13 @@ This can be expressed as:
 
     P(P|R,G,B) ? P(¬P|R,G,B)
 
-    P(P|R,G,B) = P(R|P)P(G|P)P(B|P)P(P) / P(R,G,B)
-    P(¬P|R,G,B) = P(R|¬P)P(G|¬P)P(B|¬P)P(¬P) / P(R,G,B)
-
-    P(R|P)P(G|P)P(B|P)P(P) / P(R,G,B) = P(R|¬P)P(G|¬P)P(B|¬P)P(¬P) / P(R,G,B)
-
-    P(R|P)P(G|P)P(B|P)P(P) = P(R|¬P)P(G|¬P)P(B|¬P)P(¬P)
-    P(R|P)P(G|P)P(B|P) = P(R|¬P)P(G|¬P)P(B|¬P)
+                 P(R|P)P(G|P)P(B|P)P(P)
+    P(P|R,G,B) = ━━━━━━━━━━━━━━━━━━━━━━	
+                        P(R,G,B)
+                        
+                  P(R|¬P)P(G|¬P)P(B|¬P)P(¬P)
+    P(¬P|R,G,B) = ━━━━━━━━━━━━━━━━━━━━━━━━━━ 	
+                           P(R,G,B)
 
     R=5 : Probably Plant
     G=8 : Probably Plant
@@ -190,13 +190,13 @@ This can be expressed as:
 
     P(P|R,G,B) ? P(¬P|R,G,B)
 
-    P(P|R,G,B) = P(R|P)P(G|P)P(B|P)P(P) / P(R,G,B)
-    P(¬P|R,G,B) = P(R|¬P)P(G|¬P)P(B|¬P)P(¬P) / P(R,G,B)
-
-    P(R|P)P(G|P)P(B|P)P(P) / P(R,G,B) = P(R|¬P)P(G|¬P)P(B|¬P)P(¬P) / P(R,G,B)
-
-    P(R|P)P(G|P)P(B|P)P(P) = P(R|¬P)P(G|¬P)P(B|¬P)P(¬P)
-    P(R|P)P(G|P)P(B|P) = P(R|¬P)P(G|¬P)P(B|¬P)
+                 P(R|P)P(G|P)P(B|P)P(P)
+    P(P|R,G,B) = ━━━━━━━━━━━━━━━━━━━━━━	
+                        P(R,G,B)
+                        
+                  P(R|¬P)P(G|¬P)P(B|¬P)P(¬P)
+    P(¬P|R,G,B) = ━━━━━━━━━━━━━━━━━━━━━━━━━━ 	
+                           P(R,G,B)
 
     R=30 : Probably not plant
     G=15 : Probably not plant
