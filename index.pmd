@@ -159,7 +159,51 @@ Part 3
 
 > I have an unclassified pixel (we don’t know if it belongs to plant or the background). But I know its RGB information. R = 5, G = 8 and B = 9. Does this pixel belong to plant or non-plant? Write the Bayes equation for this question.
 
+This can be expressed as:
+
+    P(P|R,G,B) ? P(¬P|R,G,B)
+
+    P(P|R,G,B) = P(R|P)P(G|P)P(B|P)P(P) / P(R,G,B)
+    P(¬P|R,G,B) = P(R|¬P)P(G|¬P)P(B|¬P)P(¬P) / P(R,G,B)
+
+    P(R|P)P(G|P)P(B|P)P(P) / P(R,G,B) = P(R|¬P)P(G|¬P)P(B|¬P)P(¬P) / P(R,G,B)
+
+    P(R|P)P(G|P)P(B|P)P(P) = P(R|¬P)P(G|¬P)P(B|¬P)P(¬P)
+    P(R|P)P(G|P)P(B|P) = P(R|¬P)P(G|¬P)P(B|¬P)
+
+    R=5 : Probably Plant
+    G=8 : Probably Plant
+    B=9 : Probably Plant
+
+Therefore:
+    
+    P(P|R,G,B) > P(¬P|R,G,B)
+
+It's probably a plant.
+
 Part 4
 ------
 
 > What about a pixel with R = 30, G = 15, and B = 24? Write the Bayes rule and explant your solution.  
+
+This can be expressed as:
+
+    P(P|R,G,B) ? P(¬P|R,G,B)
+
+    P(P|R,G,B) = P(R|P)P(G|P)P(B|P)P(P) / P(R,G,B)
+    P(¬P|R,G,B) = P(R|¬P)P(G|¬P)P(B|¬P)P(¬P) / P(R,G,B)
+
+    P(R|P)P(G|P)P(B|P)P(P) / P(R,G,B) = P(R|¬P)P(G|¬P)P(B|¬P)P(¬P) / P(R,G,B)
+
+    P(R|P)P(G|P)P(B|P)P(P) = P(R|¬P)P(G|¬P)P(B|¬P)P(¬P)
+    P(R|P)P(G|P)P(B|P) = P(R|¬P)P(G|¬P)P(B|¬P)
+
+    R=30 : Probably not plant
+    G=15 : Probably not plant
+    B=24 : Probably not plant
+
+Therefore:
+    
+    P(P|R,G,B) < P(¬P|R,G,B)
+
+It's probably not a plant.
