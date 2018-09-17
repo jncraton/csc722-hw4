@@ -161,15 +161,11 @@ Part 3
 
 This can be expressed as:
 
-    P(P|R,G,B) ? P(¬P|R,G,B)
+$P(P|R,G,B) ? P(¬P|R,G,B)$
 
-                 P(R|P)P(G|P)P(B|P)P(P)
-    P(P|R,G,B) = ━━━━━━━━━━━━━━━━━━━━━━	
-                        P(R,G,B)
-                        
-                  P(R|¬P)P(G|¬P)P(B|¬P)P(¬P)
-    P(¬P|R,G,B) = ━━━━━━━━━━━━━━━━━━━━━━━━━━ 	
-                           P(R,G,B)
+$P(P|R,G,B) = P(R|P)P(G|P)P(B|P)P(P) \over P(R,G,B)$
+
+$P(P|R,G,B) = P(R|¬P)P(G|¬P)P(B|¬P)P(¬P) \over P(R,G,B)$
 
     R=5 : Probably Plant
     G=8 : Probably Plant
@@ -177,7 +173,7 @@ This can be expressed as:
 
 Therefore:
     
-    P(P|R,G,B) > P(¬P|R,G,B)
+$P(P|R,G,B) > P(¬P|R,G,B)$
 
 It's probably a plant.
 
@@ -188,15 +184,11 @@ Part 4
 
 This can be expressed as:
 
-    P(P|R,G,B) ? P(¬P|R,G,B)
+$P(P|R,G,B) ? P(¬P|R,G,B)$
 
-                 P(R|P)P(G|P)P(B|P)P(P)
-    P(P|R,G,B) = ━━━━━━━━━━━━━━━━━━━━━━	
-                        P(R,G,B)
-                        
-                  P(R|¬P)P(G|¬P)P(B|¬P)P(¬P)
-    P(¬P|R,G,B) = ━━━━━━━━━━━━━━━━━━━━━━━━━━ 	
-                           P(R,G,B)
+$P(P|R,G,B) = P(R|P)P(G|P)P(B|P)P(P) \over P(R,G,B)$
+
+$P(P|R,G,B) = P(R|¬P)P(G|¬P)P(B|¬P)P(¬P) \over P(R,G,B)$
 
     R=30 : Probably not plant
     G=15 : Probably not plant
@@ -204,6 +196,6 @@ This can be expressed as:
 
 Therefore:
     
-    P(P|R,G,B) < P(¬P|R,G,B)
+$(P|R,G,B) < P(¬P|R,G,B)$
 
 It's probably not a plant.
