@@ -139,15 +139,27 @@ In each image, there is a plant and the background. i.e. two classes. Plant biol
 
 ![](media/prob3.png)
 
-> 1. Which of the information (R or B or G) is better to use for naïve bays classification if we only have to use one of them? i.e. which one classifies better plant vs non-plant. Explain 
+Part 1
+------
+
+> Which of the information (R or B or G) is better to use for naïve bays classification if we only have to use one of them? i.e. which one classifies better plant vs non-plant. Explain 
 why.
 
 If we could only use 1 color channel for classification, it would be best to use green. We can see from the probability distribution function that the green channel has the least intersection between plant and non-plant.
 
-> 2. Which one (R or B or G) is the worst one? Explain why.
+Part 2
+------
 
-Blue would be the worst channel to use, as it has the largest area of intersection.
+> Which one (R or B or G) is the worst one? Explain why.
 
-> 3. I have an unclassified pixel (we don’t know if it belongs to plant or the background). But I know its RGB information. R = 5, G = 8 and B = 9. Does this pixel belong to plant or non-plant? Write the Bayes equation for this question.
+Blue would be the worst channel to use, as it has the largest area of intersection. It does the worst job of capuring what is distinctive about a plant.
 
-> 4.What about a pixel with R = 30, G = 15, and B = 24? Write the Bayes rule and explant your solution.  
+Part 3
+------
+
+> I have an unclassified pixel (we don’t know if it belongs to plant or the background). But I know its RGB information. R = 5, G = 8 and B = 9. Does this pixel belong to plant or non-plant? Write the Bayes equation for this question.
+
+Part 4
+------
+
+> What about a pixel with R = 30, G = 15, and B = 24? Write the Bayes rule and explant your solution.  
