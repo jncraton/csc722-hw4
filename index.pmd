@@ -36,19 +36,19 @@ We can represent the probability of it raining given rain in the forecast as:
 
 Recall Bayes Theorem:
 
-    P(A|B) = P(B|A)·P(A)/P(B) 
+$P(A|B) = {P(B|A)P(A) \over P(B)}$
 
 So we can say that:
 
-    P(R|F) = P(F|R)·P(R)/P(F)
+$P(R|F) = {P(F|R)P(R) \over P(F)}$
 
 We can represent the marginal probability of rain in the forcast as:
 
-    P(F) = P(F|R)·P(R) + P(F|¬R)·P(¬R)
+$P(F) = P(F|R)·P(R) + P(F|¬R)·P(¬R)$
 
 So the complete repesentation of our probability is:
 
-    P(R|F) = P(F|R)·P(R) / ( P(F|R)·P(R) + P(F|¬R)·P(¬R) )
+$P(R|F) = {P(F|R)·P(R) \over P(F|R)P(R) + P(F|¬R)P(¬R)}$
 
 Now we simply plug in our values:
 
@@ -64,7 +64,7 @@ rain?
 
 The Bayes rule application if very similar to part A:
 
-    P(¬R|F) = P(F|¬R)·P(¬R) / ( P(F|R)·P(R) + P(F|¬R)·P(¬R) )
+$P(¬R|F) = {P(F|¬R)·P(¬R) \over P(F|R)P(R) + P(F|¬R)P(¬R)}$
 
 This can be evaluated as:
 
@@ -72,7 +72,7 @@ This can be evaluated as:
 .10 * (360/365) / (.90 * (5/365) + .10 * (360/365))
 ```
 
-Intuitively, this is also 1 minus our result from part A, as the joint probability of these two events must be 1.
+Intuitively, this is also 1 minus our result from part A, as the joint probability of these two events must be 1 as they are the only possible outcomes.
 
 Problem 2
 =========
@@ -91,12 +91,12 @@ Part A
 
 This is another application of Bayes Theorom, except that we now have more cases, all of which must be considered in the denominator. We can set this up as:
 
-    P(A)·P(F|A) / ( P(A)·P(F|A) + P(B)·P(F|B) + P(C)·P(F|C) )
+$P(A)·P(F|A) \over P(A)·P(F|A) + P(B)·P(F|B) + P(C)·P(F|C)$
 
 And then evaluate:
 
 ```python
-(15/30)*.04 / ( (15/30)*.04 + (5/30)*.06 + (10/30)*.03 )
+"%.02f" % ((15/30)*.04 / ( (15/30)*.04 + (5/30)*.06 + (10/30)*.03 ))
 ```
 
 Part B
@@ -104,7 +104,7 @@ Part B
 
 > What is the chance that Pia will win First Prize?
 
-    P(B)·P(F|B) / ( P(A)·P(F|A) + P(B)·P(F|B) + P(C)·P(F|C) )
+$P(B)·P(F|B) \over P(A)·P(F|A) + P(B)·P(F|B) + P(C)·P(F|C)$
 
 And then evaluate:
 
@@ -117,7 +117,7 @@ Part C
 
 > What is the chance that Pablo will win First Prize?
 
-    P(A)·P(F|A) / ( P(A)·P(F|A) + P(B)·P(F|B) + P(C)·P(F|C) )
+$P(A)·P(F|A) \over P(A)·P(F|A) + P(B)·P(F|B) + P(C)·P(F|C)$
 
 And then evaluate:
 
@@ -163,13 +163,17 @@ This can be expressed as:
 
 $P(P|R,G,B) ? P(¬P|R,G,B)$
 
+Where:
+
 $P(P|R,G,B) = P(R|P)P(G|P)P(B|P)P(P) \over P(R,G,B)$
 
-$P(P|R,G,B) = P(R|¬P)P(G|¬P)P(B|¬P)P(¬P) \over P(R,G,B)$
+$P(¬P|R,G,B) = P(R|¬P)P(G|¬P)P(B|¬P)P(¬P) \over P(R,G,B)$
 
-    R=5 : Probably Plant
-    G=8 : Probably Plant
-    B=9 : Probably Plant
+We can see that:
+
+    P(R=5|P) > P(R=5|¬P)
+    P(G=8|P) > P(G=8|¬P)
+    P(B=9|P) > P(B=9|¬P)
 
 Therefore:
     
@@ -188,11 +192,13 @@ $P(P|R,G,B) ? P(¬P|R,G,B)$
 
 $P(P|R,G,B) = P(R|P)P(G|P)P(B|P)P(P) \over P(R,G,B)$
 
-$P(P|R,G,B) = P(R|¬P)P(G|¬P)P(B|¬P)P(¬P) \over P(R,G,B)$
+$P(¬P|R,G,B) = P(R|¬P)P(G|¬P)P(B|¬P)P(¬P) \over P(R,G,B)$
 
-    R=30 : Probably not plant
-    G=15 : Probably not plant
-    B=24 : Probably not plant
+We can see that:
+
+    P(R=30|P) < P(R=30|¬P)
+    P(G=15|P) < P(G=15|¬P)
+    P(B=24|P) < P(B=24|¬P)
 
 Therefore:
     
